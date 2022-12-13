@@ -1,0 +1,26 @@
+body {
+ background-image:url("/home/ksb/hibabincy/html/pictures/css.jpg");
+ background-repeat:no-repeat;
+background-size:100%
+}
+h1 {
+color:green;
+text-align:center;
+font-famiy:tahoma;
+}
+h2{
+color:olive;
+text-align:center;
+font-family:courier new;
+}
+p{
+font-family:arial;
+text-align:center;
+}
+h3{
+color:olive;
+text-align:center;
+}
+ul{
+text-align:center;
+}
