@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>fibonacci series</title>
+</head>
+<center>
+<body bgcolor="pink">
+<u><h1>fibonacci series</h1></u>
+<script>
+function fibonacci(n){
+  var n1=0;
+  var n2=1;
+  var sum;
+  var i=0;
+   var n=prompt("enter the number:");
+   document.write("Fibonacci series:");
+    for (i=0;i<n;i++)
+     {
+         document.write("<br>"+n1);
+         sum=n1+n2;
+         n1=n2;
+         n2=sum;
+ }
+}
+</script>
+<form>     
+<label>fibonacci:</label>
+<input type="button" value="click" onclick="fibonacci()"/>
+</form>  
+</body>
+</center>
+</html>
