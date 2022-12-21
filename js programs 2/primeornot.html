@@ -1,0 +1,27 @@
+<html>
+<center>
+<body bgcolor="pink">
+<u><h1 style="color:blue">Prime or not</h1></u>
+<script>
+function prime(n){
+  var n=(prompt("enter the number:"));
+  var i,flag = true;
+  for(i = 2 ; i <= n - 1; i++)
+       if (n % i == 0){
+           flag = false;
+         break;
+     }
+  if(flag == true)
+    alert(n + " is prime number");
+  else
+    alert(n + " is not a prime number");
+}
+
+</script>
+<form>     
+<label>check prime:</label>
+<input type="button" value="click" onclick="prime()"/>
+</form>  
+</body>
+</center>
+</html>
