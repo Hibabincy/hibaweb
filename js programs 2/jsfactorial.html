@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>factorial</title>
+</head>
+<center>
+<body bgcolor="olive">
+<u><h1 style="color:red">Factorial</h1></u>
+<script>
+function factorial(n){
+  var n=parseInt(prompt("enter the number:"));
+  var answer=1;
+  if(n == 0 || n == 1 ){
+    return answer;
+  }else{
+     for(var i=n; i>=1; i--){
+       answer = answer * i;
+       }
+  alert("factorial of " +n+ " is "+answer);
+    }
+}
+</script>
+<form>
+<label>factorial of the number: </label>
+<input type="button" value="click" onclick="factorial()"/>
+</form>
+</body>
+</center>
+</html>
