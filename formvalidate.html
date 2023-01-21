@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title> p1 </title>
+</head>
+<body>
+<h2 align="center">REGISTRATION FORM</h2>
+<form id="registration-form" method ="post"
+onsubmit="return validateFORM()"><fieldset>
+<legend>PERSONAL DETAILS</legend>
+<label>Name:<br></label>
+<input type="text"id=name" name="name"><br><br>
+<label>Gender:<br></label>
+<input type="radio" name="Male">Male
+<input type="radio" name="Female">Female
+<input type="radio" name="Other">Other<br><br>
+<label>Age:<br></label>
+<input type="number maxlength="4"size="4""name=Age"><br><br><label>Add your image:<br></label>
+<input type="file" id="myfile" name="my file"><br><br>
+<label>E-mail:<br></label>
+<input type="email" id="email" name="email"><br><br>
+<label>Phone number:<br></label>
+<input type="number" id="phone" name="phone"><br><br>
+<label>create Password:<br></label>
+<input type="password" id="password" name="password"><br><br>
+<label>confirm-Password:<br></label>
+<input type="password" id="confirm-password" name="conform-password"></fieldset>
+<center>
+<input type="submit" name="submit">
+</center>
+</form>
+<script>
+function validateform(){
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+var confirm-password=document.getElementById("confirm-password").value;
+ var errormessage="";
+if(name==""){
+ errormessage+="Name is required.\n";
+}
+if(phone==""){
+ errormessage+="Phone number is required.\n";
+}
+if(email==""){
+ errormessage+="Email is required.\n";
+}
+if(password==""){
+ errormessage+="Password is required.\n";
+}
+if(password!=confirm-password){
+ errormessage+="Password do not match.\n";
+}
+if(error message!=""){
+alert (errormessage);}}</script></body><html>
+
